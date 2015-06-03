@@ -15,7 +15,7 @@ namespace HydraTK
     * the layers. It trains using backpropagation (steepest gradient descent)
     * and implements the NeuralNetwork interface.
     */
-   class MultiPerceptron : HydraNode
+   class MultiPerceptron : Supervised
    {
       // Training Parameters
       public bool VERBOSE = true;
@@ -91,7 +91,7 @@ namespace HydraTK
        * training cycles, the score is recomputed and tested; if VERBOSE is set
        * to true, then the score is printed to the console.
        */
-      public bool train (float[][] input, float[][] output)
+      public void train (float[][] input, float[][] output)
       {
          int N = input.Length;
          int MAX_SCORE = N * size [L - 1];
@@ -135,7 +135,7 @@ namespace HydraTK
             }
          }
 
-         return ((double)score / (double)MAX_SCORE > PERCENT_CORRECT);
+         return;
       }
 
       /**

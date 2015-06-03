@@ -14,7 +14,7 @@ namespace HydraTK
     * preserves topology, meaning similar input vectors should end up close to
     * each other on the map.
     */
-   class KohonenMap : HydraNode
+   class KohonenMap : Unsupervised
    {
       // Training Parameters
       public int NEIGHBOR_RADIUS;
