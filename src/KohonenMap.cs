@@ -14,7 +14,7 @@ namespace HydraTK
     * preserves topology, meaning similar input vectors should end up close to
     * each other on the map.
     */
-   class KohonenMap : NeuralNetwork
+   class KohonenMap : HydraNode
    {
       // Training Parameters
       public int NEIGHBOR_RADIUS;
@@ -135,7 +135,7 @@ namespace HydraTK
        * error checking; too few weights will result in a null pointer
        * exception and too many weights will be ignored.
        */
-      public NeuralNetwork fromFile (StreamReader s)
+      public HydraNode fromFile (StreamReader s)
       {
          int[] size = Array.ConvertAll (s.ReadLine ().Split (' '), int.Parse);
          KohonenMap kmap = new KohonenMap(size[0], size[1], size[2]);
