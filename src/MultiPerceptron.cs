@@ -15,7 +15,7 @@ namespace HydraTK
     * the layers. It trains using backpropagation (steepest gradient descent)
     * and implements the NeuralNetwork interface.
     */
-   class MultiLayerPerceptron : NeuralNetwork
+   class MultiPerceptron : NeuralNetwork
    {
       // Training Parameters
       public bool VERBOSE = true;
@@ -39,7 +39,7 @@ namespace HydraTK
        * each layer of the network; the length of the `design` array is the
        * number of nodes in the network.
        */
-      public MultiLayerPerceptron (int[] design)
+      public MultiPerceptron (int[] design)
       {
          L = design.Length;
          size = design;
@@ -163,7 +163,7 @@ namespace HydraTK
       public NeuralNetwork fromFile (StreamReader s)
       {
          int[] size = Array.ConvertAll (s.ReadLine ().Split (' '), int.Parse);
-         MultiLayerPerceptron n = new MultiLayerPerceptron (size);
+         MultiPerceptron n = new MultiPerceptron (size);
          for (int layer = 0; layer < n.L - 1; layer++)
             for (int i = 0; i < n.size [layer]; i++)
                for (int j = 0; j < n.size [layer + 1]; j++)
