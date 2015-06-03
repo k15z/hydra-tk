@@ -19,7 +19,7 @@ namespace HydraTK
    {
       // Training Parameters
       public bool VERBOSE = true;
-      public int MAX_ATTEMPT = 1000;
+      public int MAX_ATTEMPT = 100000;
       public int RESCORE_INTERVAL = 1;
       public float LEARN_RATE = 0.01f;
       public float ERROR_MARGIN = 0.5f;
