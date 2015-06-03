@@ -5,9 +5,9 @@ This is a collection of artificial intelligence / machine learning code that I b
 
 ## Completed
  - Multi-Layer Perceptron
+ - Kohonen Self-Organizing Map
 
 ## Upcoming
- - Kohonen Self-Organizing Map
  - Radial Basis Function Network
  - Hopfield Network
  - Support Vector Machines
