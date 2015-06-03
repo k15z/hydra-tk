@@ -2,23 +2,35 @@ using System;
 using System.IO;
 
 /**
-* This file contains the various interfaces which will be implemented by the
-* various objects included in the HydraTK namespace.
-*/
+ * This file contains the various interfaces which will be implemented by the
+ * various objects included in the HydraTK namespace. As of 06/02/2015, the
+ * only interface that is being used is the NeuralNetwork interface.
+ */
 namespace HydraTK
 {
-   interface HydraNode
-   {
-      float[] feed(float[] input);
-   }
+    /**
+     * Objects which implement the NeuralNetwork interface must accept an array
+     * of floating point numbers as the input vector and return an array of
+     * floating point numbers as the output vector.
+     */
+    interface NeuralNetwork
+    {
+        float[] feed(float[] input);
+        void toFile(StreamWriter stream);
+        NeuralNetwork fromFile(StreamReader stream);
+    }
 
-   interface Supervised : HydraNode
-   {
-      void train(float[][] input, float[][] output);
-   }
+    /**
+     * TBD.
+     */
+    interface ClassificationTree
+    {
+    }
 
-   interface Unsupervised : HydraNode
-   {
-      void train(float[][] input);
-   }
+    /**
+     * TBD.
+     */
+    interface RegressionTree
+    {
+    }
 }
