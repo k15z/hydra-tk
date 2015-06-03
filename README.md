@@ -3,8 +3,12 @@ This is a collection of artificial intelligence / machine learning code that I b
 
 > mcs -target:library -out:bin/HydraTK.dll src/*.cs
 
-## Possible Topics
- - Multilayer Perceptron
+## Completed
+ - Multi-Layer Perceptron
+
+## Upcoming
  - Kohonen Self-Organizing Map
  - Radial Basis Function Network
  - Hopfield Network
+ - Support Vector Machines
+ - Restricted Boltzman Machines
