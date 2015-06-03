@@ -4,8 +4,7 @@ using System.IO;
 /**
  * This file contains my implementation of the multi-layer perceptron, a type
  * of feedforward neural network which has been used for a wide variety of
- * artificial intelligence tasks such as optical character recognition and
- * speech recognition.
+ * artificial intelligence tasks.
  */
 namespace HydraTK
 {
