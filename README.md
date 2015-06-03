@@ -7,8 +7,11 @@ This is a collection of artificial intelligence / machine learning code that I b
  - Multi-Layer Perceptron
  - Kohonen Self-Organizing Map
 
-## Upcoming
+## Ideas
  - Radial Basis Function Network
+ - Autoencoder Network
  - Hopfield Network
  - Support Vector Machines
  - Restricted Boltzman Machines
+ - Gaussian Mixture Models
+ - K-means Clustering
